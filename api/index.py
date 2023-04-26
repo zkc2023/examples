@@ -13,3 +13,7 @@ def index():
     return 'hhhh'
     # return render_template('index.html', canning=canning)
 
+@app.route('/chisha')
+def chisha():
+    num = randint(0, len(canning) - 1)
+    return canning[num]
